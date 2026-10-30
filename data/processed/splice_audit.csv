@@ -1,0 +1,18 @@
+sector,b_sector,overlap_weeks,max_rel_gap_pct,spliced
+Total,20.Total,2,0.0,True
+Beverage and Food,6.Food & Beverages,2,0.0,True
+Gas Stations,17.Gas Stations,2,0.094,True
+Hotels,5.Hotels,2,0.0,True
+Public Utilities,16.Public Utilities & Services,2,0.0,True
+Transportation,1. Transportation,2,37.739,False
+Health,2.Health,2,20.734,False
+Restaurants & Café,3.Restaurants & Café,2,12.36,False
+Clothing and Footwear,"7.Apparel, Clothing & Accessories",2,6.117,False
+Jewelry,13.Jewelry,2,8.447,False
+Furniture,11.Furniture & Home Supplies,2,79.609,False
+Electronic & Electric Devices,10.Electronic & Electric Devices,2,8.172,False
+Construction & Building Materials,12.Construction & Building Materials,2,22.774,False
+Telecommunication,14.Telecommunication,2,32.148,False
+Education,15.Education,2,10.522,False
+Recreation and Culture,8.Recreation & Culture,2,31.045,False
+Other,19.Others,2,19.48,False

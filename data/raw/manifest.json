@@ -1,0 +1,26 @@
+{
+  "pos_a": {
+    "dataset_id": "point-of-sale-transactions-by-sector-and-city",
+    "title": "Point of Sale Transactions by Sector and City",
+    "publisher": "Saudi Central Bank (SAMA)",
+    "license": "Public Domain (as labelled on the KAPSARC Data Portal); source copyright SAMA",
+    "download_url": "https://datasource.kapsarc.org/api/explore/v2.1/catalog/datasets/point-of-sale-transactions-by-sector-and-city/exports/csv?delimiter=%2C",
+    "landing_page": "https://datasource.kapsarc.org/explore/dataset/point-of-sale-transactions-by-sector-and-city/",
+    "file": "point-of-sale-transactions-by-sector-and-city.csv",
+    "bytes": 2480242,
+    "sha256": "527b766d157eabc2a4586ce89e14f768ff28e876a91120fab52edf79ac9d0a77",
+    "downloaded_utc": "2026-10-17T11:45:00+00:00"
+  },
+  "pos_b": {
+    "dataset_id": "detailed-point-of-sale-transactions-by-sector-and-city",
+    "title": "Detailed Point of Sale Transactions by Sector and City",
+    "publisher": "Saudi Central Bank (SAMA)",
+    "license": "Public Domain (as labelled on the KAPSARC Data Portal); source copyright SAMA",
+    "download_url": "https://datasource.kapsarc.org/api/explore/v2.1/catalog/datasets/detailed-point-of-sale-transactions-by-sector-and-city/exports/csv?delimiter=%2C",
+    "landing_page": "https://datasource.kapsarc.org/explore/dataset/detailed-point-of-sale-transactions-by-sector-and-city/",
+    "file": "detailed-point-of-sale-transactions-by-sector-and-city.csv",
+    "bytes": 1131323,
+    "sha256": "0e4f64b4dbb09deb4302ae579a336828fa8db9c0e215113f65a6b1888fd0eead",
+    "downloaded_utc": "2026-10-17T11:45:04+00:00"
+  }
+}

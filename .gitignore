@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv*/
+.pytest_cache/
+venv/
+.venv/
+env/
+*.egg-info/
+.cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+# large/extra raw downloads (the two SAMA CSVs used here, ~3.6 MB, are committed for exact reproducibility)
+data/raw/*.zip
+data/raw/*.parquet

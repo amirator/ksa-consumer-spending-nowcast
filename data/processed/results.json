@@ -1,0 +1,507 @@
+{
+  "n_series": 18,
+  "series_start": "2020-07",
+  "series_end_by_sector": {
+    "Beverage and Food": "2026-02",
+    "Clothing and Footwear": "2025-06",
+    "Construction & Building Materials": "2025-06",
+    "Education": "2025-06",
+    "Electronic & Electric Devices": "2025-06",
+    "Furniture": "2025-06",
+    "Gas Stations": "2026-02",
+    "Health": "2025-06",
+    "Hotels": "2026-02",
+    "Jewelry": "2025-06",
+    "Miscellaneous Goods and Services": "2025-06",
+    "Other": "2025-06",
+    "Public Utilities": "2026-02",
+    "Recreation and Culture": "2025-06",
+    "Restaurants & Caf\u00e9": "2025-06",
+    "Telecommunication": "2025-06",
+    "Total": "2026-02",
+    "Transportation": "2025-06"
+  },
+  "months_by_sector": {
+    "Beverage and Food": 68,
+    "Clothing and Footwear": 60,
+    "Construction & Building Materials": 60,
+    "Education": 60,
+    "Electronic & Electric Devices": 60,
+    "Furniture": 60,
+    "Gas Stations": 68,
+    "Health": 60,
+    "Hotels": 68,
+    "Jewelry": 60,
+    "Miscellaneous Goods and Services": 60,
+    "Other": 60,
+    "Public Utilities": 68,
+    "Recreation and Culture": 60,
+    "Restaurants & Caf\u00e9": 60,
+    "Telecommunication": 60,
+    "Total": 68,
+    "Transportation": 60
+  },
+  "spliced_sectors": [
+    "Total",
+    "Beverage and Food",
+    "Gas Stations",
+    "Hotels",
+    "Public Utilities"
+  ],
+  "n_origins": 12,
+  "horizon": 6,
+  "mean_over_sectors": {
+    "ETS": {
+      "MAPE": 11.25,
+      "sMAPE": 10.76,
+      "MAPE_h1": 9.55
+    },
+    "LightGBM": {
+      "MAPE": 9.51,
+      "sMAPE": 9.56,
+      "MAPE_h1": 7.87
+    },
+    "SARIMAX": {
+      "MAPE": 7.21,
+      "sMAPE": 7.21,
+      "MAPE_h1": 5.45
+    },
+    "SeasonalNaive": {
+      "MAPE": 11.25,
+      "sMAPE": 11.09,
+      "MAPE_h1": 11.17
+    }
+  },
+  "wins_by_model": {
+    "SARIMAX": 11,
+    "ETS": 3,
+    "LightGBM": 2,
+    "SeasonalNaive": 2
+  },
+  "best_by_sector": {
+    "Beverage and Food": {
+      "model": "ETS",
+      "MAPE": 4.51,
+      "sMAPE": 4.51,
+      "MAPE_h1": 4.51,
+      "SeasonalNaive_MAPE": 6.36
+    },
+    "Clothing and Footwear": {
+      "model": "SARIMAX",
+      "MAPE": 10.4,
+      "sMAPE": 9.83,
+      "MAPE_h1": 8.69,
+      "SeasonalNaive_MAPE": 18.7
+    },
+    "Construction & Building Materials": {
+      "model": "LightGBM",
+      "MAPE": 3.16,
+      "sMAPE": 3.22,
+      "MAPE_h1": 3.11,
+      "SeasonalNaive_MAPE": 3.29
+    },
+    "Education": {
+      "model": "SARIMAX",
+      "MAPE": 7.5,
+      "sMAPE": 7.4,
+      "MAPE_h1": 9.71,
+      "SeasonalNaive_MAPE": 14.27
+    },
+    "Electronic & Electric Devices": {
+      "model": "SARIMAX",
+      "MAPE": 13.64,
+      "sMAPE": 12.3,
+      "MAPE_h1": 6.65,
+      "SeasonalNaive_MAPE": 31.37
+    },
+    "Furniture": {
+      "model": "SeasonalNaive",
+      "MAPE": 5.29,
+      "sMAPE": 5.15,
+      "MAPE_h1": 4.91,
+      "SeasonalNaive_MAPE": 5.29
+    },
+    "Gas Stations": {
+      "model": "SARIMAX",
+      "MAPE": 3.42,
+      "sMAPE": 3.36,
+      "MAPE_h1": 2.42,
+      "SeasonalNaive_MAPE": 8.15
+    },
+    "Health": {
+      "model": "SARIMAX",
+      "MAPE": 3.32,
+      "sMAPE": 3.3,
+      "MAPE_h1": 2.5,
+      "SeasonalNaive_MAPE": 4.0
+    },
+    "Hotels": {
+      "model": "SeasonalNaive",
+      "MAPE": 6.02,
+      "sMAPE": 6.19,
+      "MAPE_h1": 6.24,
+      "SeasonalNaive_MAPE": 6.02
+    },
+    "Jewelry": {
+      "model": "SARIMAX",
+      "MAPE": 11.65,
+      "sMAPE": 12.72,
+      "MAPE_h1": 10.2,
+      "SeasonalNaive_MAPE": 21.18
+    },
+    "Miscellaneous Goods and Services": {
+      "model": "ETS",
+      "MAPE": 7.0,
+      "sMAPE": 6.77,
+      "MAPE_h1": 6.16,
+      "SeasonalNaive_MAPE": 9.76
+    },
+    "Other": {
+      "model": "LightGBM",
+      "MAPE": 4.2,
+      "sMAPE": 4.21,
+      "MAPE_h1": 3.97,
+      "SeasonalNaive_MAPE": 15.94
+    },
+    "Public Utilities": {
+      "model": "ETS",
+      "MAPE": 13.13,
+      "sMAPE": 13.17,
+      "MAPE_h1": 7.77,
+      "SeasonalNaive_MAPE": 23.55
+    },
+    "Recreation and Culture": {
+      "model": "SARIMAX",
+      "MAPE": 6.65,
+      "sMAPE": 6.53,
+      "MAPE_h1": 4.84,
+      "SeasonalNaive_MAPE": 8.89
+    },
+    "Restaurants & Caf\u00e9": {
+      "model": "SARIMAX",
+      "MAPE": 4.03,
+      "sMAPE": 3.98,
+      "MAPE_h1": 3.05,
+      "SeasonalNaive_MAPE": 4.04
+    },
+    "Telecommunication": {
+      "model": "SARIMAX",
+      "MAPE": 6.99,
+      "sMAPE": 6.73,
+      "MAPE_h1": 4.02,
+      "SeasonalNaive_MAPE": 9.7
+    },
+    "Total": {
+      "model": "SARIMAX",
+      "MAPE": 3.17,
+      "sMAPE": 3.13,
+      "MAPE_h1": 3.73,
+      "SeasonalNaive_MAPE": 5.55
+    },
+    "Transportation": {
+      "model": "SARIMAX",
+      "MAPE": 5.89,
+      "sMAPE": 5.75,
+      "MAPE_h1": 5.09,
+      "SeasonalNaive_MAPE": 6.47
+    }
+  },
+  "sectors_beating_baseline": 16,
+  "hijri_ablation": {
+    "SARIMAX_mean_MAPE": 7.21,
+    "SARIMA_noHijri_mean_MAPE": 8.87,
+    "sectors_where_hijri_regressors_help": 11,
+    "by_sector": {
+      "Beverage and Food": {
+        "SARIMAX": 5.05,
+        "SARIMA_noHijri": 4.66
+      },
+      "Clothing and Footwear": {
+        "SARIMAX": 10.4,
+        "SARIMA_noHijri": 17.94
+      },
+      "Construction & Building Materials": {
+        "SARIMAX": 3.67,
+        "SARIMA_noHijri": 3.6
+      },
+      "Education": {
+        "SARIMAX": 7.5,
+        "SARIMA_noHijri": 15.77
+      },
+      "Electronic & Electric Devices": {
+        "SARIMAX": 13.64,
+        "SARIMA_noHijri": 14.89
+      },
+      "Furniture": {
+        "SARIMAX": 6.16,
+        "SARIMA_noHijri": 6.25
+      },
+      "Gas Stations": {
+        "SARIMAX": 3.42,
+        "SARIMA_noHijri": 3.72
+      },
+      "Health": {
+        "SARIMAX": 3.32,
+        "SARIMA_noHijri": 2.48
+      },
+      "Hotels": {
+        "SARIMAX": 6.66,
+        "SARIMA_noHijri": 6.5
+      },
+      "Jewelry": {
+        "SARIMAX": 11.65,
+        "SARIMA_noHijri": 17.46
+      },
+      "Miscellaneous Goods and Services": {
+        "SARIMAX": 8.22,
+        "SARIMA_noHijri": 8.47
+      },
+      "Other": {
+        "SARIMAX": 7.21,
+        "SARIMA_noHijri": 6.2
+      },
+      "Public Utilities": {
+        "SARIMAX": 16.05,
+        "SARIMA_noHijri": 15.64
+      },
+      "Recreation and Culture": {
+        "SARIMAX": 6.65,
+        "SARIMA_noHijri": 8.05
+      },
+      "Restaurants & Caf\u00e9": {
+        "SARIMAX": 4.03,
+        "SARIMA_noHijri": 5.32
+      },
+      "Telecommunication": {
+        "SARIMAX": 6.99,
+        "SARIMA_noHijri": 7.52
+      },
+      "Total": {
+        "SARIMAX": 3.17,
+        "SARIMA_noHijri": 2.73
+      },
+      "Transportation": {
+        "SARIMAX": 5.89,
+        "SARIMA_noHijri": 12.56
+      }
+    }
+  },
+  "nowcast": [
+    {
+      "unique_id": "Telecommunication",
+      "ds": "2025-07-01",
+      "y_obs": 0.215,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 0.477,
+      "lo80": 0.446,
+      "hi80": 0.495,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 45.008
+    },
+    {
+      "unique_id": "Restaurants & Caf\u00e9",
+      "ds": "2025-07-01",
+      "y_obs": 3.316,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 8.153,
+      "lo80": 7.83,
+      "hi80": 8.547,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 40.678
+    },
+    {
+      "unique_id": "Recreation and Culture",
+      "ds": "2025-07-01",
+      "y_obs": 0.465,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 1.033,
+      "lo80": 0.956,
+      "hi80": 1.058,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 45.076
+    },
+    {
+      "unique_id": "Transportation",
+      "ds": "2025-07-01",
+      "y_obs": 1.277,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 3.05,
+      "lo80": 2.775,
+      "hi80": 3.191,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 41.859
+    },
+    {
+      "unique_id": "Other",
+      "ds": "2025-07-01",
+      "y_obs": 4.71,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 10.753,
+      "lo80": 10.042,
+      "hi80": 11.353,
+      "model": "LightGBM",
+      "observed_share_of_forecast_pct": 43.803
+    },
+    {
+      "unique_id": "Miscellaneous Goods and Services",
+      "ds": "2025-07-01",
+      "y_obs": 2.791,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 7.241,
+      "lo80": 6.51,
+      "hi80": 7.728,
+      "model": "ETS",
+      "observed_share_of_forecast_pct": 38.547
+    },
+    {
+      "unique_id": "Jewelry",
+      "ds": "2025-07-01",
+      "y_obs": 0.542,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 1.16,
+      "lo80": 1.086,
+      "hi80": 1.359,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 46.758
+    },
+    {
+      "unique_id": "Health",
+      "ds": "2025-07-01",
+      "y_obs": 1.427,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 3.482,
+      "lo80": 3.357,
+      "hi80": 3.594,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 41.002
+    },
+    {
+      "unique_id": "Furniture",
+      "ds": "2025-07-01",
+      "y_obs": 0.483,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 1.204,
+      "lo80": 1.126,
+      "hi80": 1.263,
+      "model": "SeasonalNaive",
+      "observed_share_of_forecast_pct": 40.086
+    },
+    {
+      "unique_id": "Electronic & Electric Devices",
+      "ds": "2025-07-01",
+      "y_obs": 0.302,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 0.647,
+      "lo80": 0.563,
+      "hi80": 0.677,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 46.592
+    },
+    {
+      "unique_id": "Education",
+      "ds": "2025-07-01",
+      "y_obs": 0.203,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 0.529,
+      "lo80": 0.459,
+      "hi80": 0.606,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 38.369
+    },
+    {
+      "unique_id": "Construction & Building Materials",
+      "ds": "2025-07-01",
+      "y_obs": 0.576,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 1.507,
+      "lo80": 1.485,
+      "hi80": 1.587,
+      "model": "LightGBM",
+      "observed_share_of_forecast_pct": 38.234
+    },
+    {
+      "unique_id": "Clothing and Footwear",
+      "ds": "2025-07-01",
+      "y_obs": 1.465,
+      "days": 12,
+      "last_day": "2025-07-12 00:00:00",
+      "yhat": 3.259,
+      "lo80": 3.003,
+      "hi80": 3.611,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 44.941
+    },
+    {
+      "unique_id": "Gas Stations",
+      "ds": "2026-03-01",
+      "y_obs": 3.517,
+      "days": 28,
+      "last_day": "2026-03-28 00:00:00",
+      "yhat": 4.14,
+      "lo80": 4.015,
+      "hi80": 4.256,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 84.953
+    },
+    {
+      "unique_id": "Total",
+      "ds": "2026-03-01",
+      "y_obs": 60.047,
+      "days": 28,
+      "last_day": "2026-03-28 00:00:00",
+      "yhat": 68.533,
+      "lo80": 65.025,
+      "hi80": 71.757,
+      "model": "SARIMAX",
+      "observed_share_of_forecast_pct": 87.618
+    },
+    {
+      "unique_id": "Beverage and Food",
+      "ds": "2026-03-01",
+      "y_obs": 9.025,
+      "days": 28,
+      "last_day": "2026-03-28 00:00:00",
+      "yhat": 10.103,
+      "lo80": 9.443,
+      "hi80": 10.714,
+      "model": "ETS",
+      "observed_share_of_forecast_pct": 89.323
+    },
+    {
+      "unique_id": "Public Utilities",
+      "ds": "2026-03-01",
+      "y_obs": 0.211,
+      "days": 28,
+      "last_day": "2026-03-28 00:00:00",
+      "yhat": 0.285,
+      "lo80": 0.25,
+      "hi80": 0.312,
+      "model": "ETS",
+      "observed_share_of_forecast_pct": 74.065
+    },
+    {
+      "unique_id": "Hotels",
+      "ds": "2026-03-01",
+      "y_obs": 1.473,
+      "days": 28,
+      "last_day": "2026-03-28 00:00:00",
+      "yhat": 1.656,
+      "lo80": 1.581,
+      "hi80": 1.842,
+      "model": "SeasonalNaive",
+      "observed_share_of_forecast_pct": 88.937
+    }
+  ]
+}
